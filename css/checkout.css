@@ -1,0 +1,58 @@
+/* css/checkout.css */
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.checkOutForm,
+#checkout-Container {
+  width: 45%;
+}
+
+.checkOutForm h3,
+#checkout-Container h3 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.checkOutTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.checkOutTable th,
+.checkOutTable td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+#checkout-btn {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#checkout-btn input {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#checkout-btn input:hover {
+  background-color: #45a049;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}

@@ -1,0 +1,85 @@
+/*General fromat styles*/
+body {
+  position: relative;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
+  background: linear-gradient(to left, #cab144, #328bc3, #0c3b5d);
+  background-clip: text;
+  display: inline;
+  animation: animated 5s linear infinite;
+}
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: "Rubik", sans-serif;
+}
+h1,
+h1,
+h3,
+p {
+  text-align: center;
+  margin: 0;
+}
+/*End of general format styles*/
+
+/*Navigation Bar Styles*/
+#store-logo {
+  padding-right: 30px;
+  margin: 0;
+}
+.nav-bar {
+  background-color: #0c3b5d;
+  font-size: 20px;
+  padding: 1.2%;
+}
+.nav-bar .links {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 0.5% 3% 0.5% 3%;
+}
+.links:link {
+  color: white;
+}
+.links:hover {
+  border-bottom: 5px solid white;
+}
+/*Navigation Bar Styles End*/
+
+/* table responsive */
+.table-responsive{
+	border-radius: 20px;
+}
+
+.table .table-responsive{
+	background-color: #cab144;
+}
+/* end of table responsive */
+
+/*Footer Styles*/
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 5.5rem;
+  color: white;
+  text-align: center;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+#footer ul {
+  padding: 25px;
+}
+#footer li {
+  display: inline;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 10px 15px 10px 15px;
+}
+/*End of Footer Styles*/

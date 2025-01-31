@@ -1,0 +1,496 @@
+/*General fromat styles*/
+html,
+body {
+  position: relative;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
+  background: linear-gradient(to left, #ffd92d, #328bc3, #0c3b5d);
+  background-clip: text;
+  display: inline;
+  animation: animated 8s linear infinite;
+}
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: "Rubik", sans-serif;
+}
+h1,
+h1,
+h3,
+p {
+  text-align: center;
+  margin: 0;
+}
+/*End of general format styles*/
+
+/*Navigation Bar Styles*/
+#store-logo {
+  padding-right: 30px;
+  margin: 0;
+}
+
+.navbar-content {
+  background-color: transparent;
+  display: flex;
+}
+
+.nav-bar {
+  background-color: #0c3b5d;
+  font-size: 20px;
+  padding: 1%;
+}
+
+.nav-bar a {
+  color: white;
+}
+
+.btn-outline-success {
+  border: 2px solid #d9b312 !important;
+  color: #d9b312 !important;
+  background-color: transparent !important;
+}
+
+.btn-outline-success:hover {
+  background-color: #d9b312 !important;
+  color: #fff !important;
+}
+
+.btn-outline-success:active {
+  background-color: #b49510 !important;
+  border-color: #b49510 !important;
+  color: #fff !important;
+}
+
+.logo-keranjang {
+  height: 30px;
+  width: 40px;
+}
+
+.akun {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-evenly;
+}
+.login-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  font-family: "Lucida Sans";
+  text-decoration: none;
+}
+
+.logo-login {
+  height: 30px;
+  width: 30px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  color: #328bc3;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li a {
+  padding: 5px 10px;
+  color: #0c3b5d;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  color: #328bc3;
+  background-color: #f2f2f2;
+}
+
+/*Navigation Bar Styles End*/
+
+/*Banner Image Styles*/
+#Banner {
+  height: 100vh;
+  background: url("../img/bglog.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+  animation: slideDown 2s ease-out forwards; /* Apply the animation */
+}
+
+@keyframes slideDown {
+  from {
+    background-position: center top; /* Start position */
+  }
+  to {
+    background-position: center bottom; /* End position */
+  }
+}
+
+#Banner h1 {
+  font-size: 70px;
+  color: transparent;
+  background: linear-gradient(to left, #b49510, #328bc3, #0c3b5d);
+  background-clip: text;
+  display: inline;
+  animation: animated 5s linear infinite;
+}
+@keyframes animated {
+  to {
+    background-position-x: 161px;
+  }
+}
+
+/* button lihat produk */
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Menyesuaikan tinggi wrapper dengan tinggi viewport */
+}
+
+.btn-wrapper .btn-77 {
+  background-color: #0c3b5d;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  animation: pulse 2s infinite;
+  border: 1px solid;
+  border-radius: 999px;
+  box-shadow: 0 0 0 2em transparent;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0#328bc3;
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #0c3b5d;
+  }
+}
+/* End of button lihat produk */
+
+/*Product Slider*/
+.carousel-item img {
+  display: block;
+  margin: 3% auto;
+  border-radius: 20px;
+  height: 500px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensures the image covers the element's content box */
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 4);
+}
+
+.carousel-caption {
+  background-color: aqua;
+  border: 2px solid black;
+  border-radius: 100px;
+  padding: 0%;
+  color: black;
+  text-align: center;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 4);
+}
+
+/*End of Product Slider*/
+
+/*Product Forms*/
+#product-header {
+  font-size: 50px;
+  color: #ffffff;
+  margin: 3%;
+  font-weight: 200;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1% 1%;
+  border-radius: 20px;
+  padding: 3%;
+  margin: 1%;
+}
+.product-item {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 0%;
+  color: black;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 4);
+}
+.item-details {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: aqua;
+  padding: 5%;
+}
+.image {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.price {
+  text-align: center;
+  font-size: 15px;
+  padding: 1%;
+}
+.name {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+.cart-action {
+  padding: 5% 1% 5% 1%;
+  margin: 0;
+}
+.add-btn {
+  text-decoration: none;
+  background-color: DodgerBlue;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 5% 8% 5% 8%;
+  margin-left: 30px;
+}
+.add-btn:hover {
+  background-color: #0033cc;
+}
+/*End of Product Forms*/
+
+/* About us */
+#container-aboutus {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.h1-aboutus {
+  margin-top: 0px;
+  width: 70%;
+  height: 550px;
+  min-width: 820px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 4);
+  overflow: hidden;
+  background-color: #0c3b5d;
+  z-index: 1000;
+}
+
+.p-aboutus {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* contact us */
+#container-contact {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.item-contact {
+  margin-top: 0px;
+  width: 70%;
+  height: 550px;
+  min-width: 820px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 4);
+  overflow: hidden;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  z-index: 1000;
+}
+
+.contact {
+  background: #fff;
+}
+
+.submit-form {
+  background: #0c3b5d;
+}
+
+.first-text {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #0c3b5d;
+}
+
+.image {
+  margin-left: 10%;
+  height: 250px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.secnd-text {
+  margin-left: 20px;
+  font-weight: 500;
+  color: #328bc3;
+}
+
+.social-media {
+  display: flex;
+  list-style: none;
+}
+
+.social-media li {
+  padding-left: 15px;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.social-media i {
+  background: #0c3b5d;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-left: 10px;
+}
+
+.social-media i:hover {
+  background: #fff;
+  color: #0c3b5d;
+}
+
+.third-text {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+}
+
+.submit-form form {
+  padding: 0px 20px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.input-box {
+  height: 40px;
+  width: 100%;
+  margin: 20px 0px;
+  position: relative;
+}
+
+.input-box input {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  outline: none;
+  padding-left: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.input-box textarea {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  outline: none;
+  padding-left: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.input-box label {
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  padding-left: 10px;
+  transform: translateY(-50%);
+  font-size: 15 px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.input-box .input:focus ~ label,
+.input-box .input:valid ~ label {
+  top: -1px;
+  left: 10px;
+  background: #0c3b5d;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 5px;
+}
+
+#massage {
+  height: 170px;
+}
+
+.submit-form button {
+  background-color: aqua;
+  min-height: 40px;
+  max-height: 80px;
+  min-width: 70px;
+  max-width: 140px;
+  border-radius: 20px;
+  color: #0c3b5d solid;
+  margin-top: 120px;
+}
+/* end contact us */
+
+/*Footer Styles*/
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 5.5rem;
+  color: white;
+  text-align: center;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+#footer ul {
+  padding: 25px;
+}
+#footer li {
+  display: inline;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 10px 15px 10px 15px;
+}
+/*End of Footer Styles*/
