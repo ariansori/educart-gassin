@@ -1,1 +1,1 @@
-Aplikasi berbasis web online-shop alat kantor dan perlengkapan belajar bernama "Educartgassin" sebagai projek akhir tugas kuliah Pemrograman Web
+Aplikasi berbasis web online-shop alat kantor dan perlengkapan belajar bernama "Educartgassin" sebagai projek akhir tugas kuliah Pemrograman Web. Untuk Front End Web ini dibuat dengan pemrograman HTML, CSS dan JavaScript. Kemudian untuk Back End sendiri menggunakan PHP native dengan bantuan Framework XAMPP untuk memudahkan pengelolaan database di localhost php MyAdmin. Kami menggunakan VsCode sebagai text editornya.
